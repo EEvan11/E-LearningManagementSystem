@@ -1,0 +1,156 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.sidebar {
+    background-color: #333; /* Background color of the sidebar */
+    width: 250px; /* Adjust the width to your preference */
+    padding: 20px; /* Add padding for spacing */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%; /* Make the sidebar cover the entire height */
+    color: #fff; /* Text color */
+}
+
+.sidebar a {
+    text-decoration: none;
+    display: block;
+    color: #fff; /* Text color for links */
+    padding: 10px 0; /* Adjust the padding to your liking */
+    transition: background-color 0.3s; /* Add a smooth transition effect */
+}
+
+.sidebar a:hover {
+    background-color: #555; /* Background color on hover */
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+a, button {
+    transition: background-color 0.3s;
+}
+
+a:hover, button:hover {
+    background-color: #ddd;
+}
+
+/* Form styling */
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Feedback for invalid input */
+input:invalid {
+    border-color: red;
+}
+
+/* Student list styles */
+.student-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.student-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: calc(33.33% - 20px); /* Display three cards per row */
+    text-align: center;
+}
+
+.student-info {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.student-actions {
+    margin-top: 10px;
+}
+
+/* Student filter styles */
+.student-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#search-bar {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Style for the selected radio button */
+input[type="radio"]:checked + label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .student-card {
+        width: calc(50% - 20px);
+    }
+}

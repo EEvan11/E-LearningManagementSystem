@@ -1,0 +1,42 @@
+.teacher-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.teacher-sidebar {
+    width: 25%;
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.teacher-sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+
+.teacher-sidebar a:hover {
+    background-color: #666;
+}
+
+.teacher-main-content {
+    width: 70%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.teacher-button {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.teacher-button:hover {
+    background-color: #666;
+}

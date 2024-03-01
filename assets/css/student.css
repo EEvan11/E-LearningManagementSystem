@@ -1,0 +1,42 @@
+.student-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.student-sidebar {
+    width: 25%;
+    background-color: #555;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.student-sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+
+.student-sidebar a:hover {
+    background-color: #777;
+}
+
+.student-main-content {
+    width: 70%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.student-button {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.student-button:hover {
+    background-color: #777;
+}

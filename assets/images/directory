@@ -1,0 +1,28 @@
+from PIL import Image, ImageDraw, ImageFont
+
+# Define the path for the images directory
+images_directory = os.path.join(assets_directory, "images")
+
+# Ensure that the directory structure exists
+if not os.path.exists(images_directory):
+    os.makedirs(images_directory)
+
+# Create a placeholder logo image
+img_width, img_height = 300, 100
+img = Image.new('RGB', (img_width, img_height), color = 'white')
+d = ImageDraw.Draw(img)
+d.text((10,10), "E-Learning Logo", fill='black')
+
+logo_path = os.path.join(images_directory, "logo.png")
+img.save(logo_path)
+
+# Create a placeholder banner image
+img_width, img_height = 1200, 200
+img = Image.new('RGB', (img_width, img_height), color = 'blue')
+d = ImageDraw.Draw(img)
+d.text((50,50), "E-Learning Banner", fill='white')
+
+banner_path = os.path.join(images_directory, "banner.png")
+img.save(banner_path)
+
+"Placeholder images created in assets/images/ directory."
